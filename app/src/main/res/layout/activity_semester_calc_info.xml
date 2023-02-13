@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="409dp"
+            android:layout_height="729dp" tools:layout_editor_absoluteY="1dp" tools:layout_editor_absoluteX="1dp"
+            tools:ignore="MissingConstraints">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp" android:background="@color/colorPrimaryDark"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+            <Button
+                    android:text="HOME"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/btn_back_semester_info"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:text="Semester Grade Calculator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:textColor="@color/white"
+                    android:gravity="center_horizontal|center_vertical" android:textSize="25sp"
+                    android:layout_marginTop="15dp"/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:layout_weight="1"/>
+        </TableRow>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        <TextView
+                android:text="How many courses to calculate?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:gravity="center_horizontal"
+                android:textSize="20sp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_marginTop="20dp">
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/num_courses" android:hint="Enter number"
+                    android:gravity="center_horizontal"/>
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView
+                android:text="Calculate with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView7" android:gravity="center_horizontal"
+                android:layout_marginTop="60dp" android:layout_marginBottom="20dp"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" android:layout_weight="1"/>
+            <Switch
+                    android:text="Letter grades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/switch_sem"
+                    android:gravity="center_horizontal"/>
+            <TextView
+                    android:text="numbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5"
+                    android:gravity="center_horizontal"/>
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="100dp">
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button
+                    android:text="Calculate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_calc_sem"/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
