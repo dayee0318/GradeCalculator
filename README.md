@@ -22,7 +22,7 @@ Dev Environment
     - ```Android``` 
   
 2. API
-   - ``` 27```
+   - ```27```
   
 3. Language
    - ```Kotlin```
