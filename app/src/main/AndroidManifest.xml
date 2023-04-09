@@ -17,10 +17,10 @@
         <activity android:name=".Semester_info" android:exported="true"/>
         <activity android:name=".Semester_calc" android:exported="true"/>
         <activity android:name=".Course_calc" android:exported="true"/>
+        <activity android:name=".Semester_calc_letter" android:exported="true"/>
+        <activity android:name=".Semester_calc_number" android:exported="true"/>
 
-        <activity
-                android:name=".MainActivity"
-                android:exported="true">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

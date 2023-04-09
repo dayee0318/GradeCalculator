@@ -41,12 +41,24 @@ class Semester_info : AppCompatActivity() {
                 builder.show()
             }
 
-            // Move to next with entered value
-            else {
-                val intent = Intent(this, Semester_calc::class.java)
-                //intent.putExtra("numCourses", Integer.parseInt(binding.numTask.toString()))
-                startActivity(intent)
+            // Button toggle read
+            binding.switchSem.setOnClickListener {
+                // Calc with letter grades
+                if (!binding.switchSem.isChecked) {
+                    val intent = Intent(this, Semester_calc_letter::class.java)
+                    //intent.putExtra("numCourses", Integer.parseInt(binding.numTask.toString()))
+                    startActivity(intent)
+                }
+                else {
+                    val intent = Intent(this, Semester_calc_number::class.java)
+                    //intent.putExtra("numCourses", Integer.parseInt(binding.numTask.toString()))
+                    startActivity(intent)
+                }
+
             }
+
+            // Move to next with entered value
+
         }
     }
 }

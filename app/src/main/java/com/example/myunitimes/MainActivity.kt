@@ -34,51 +34,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*
-        binding.numGrades.onItemSelectedListener = object:AdapterView.OnItemSelectedListener{
-
-            override fun onItemSelected(p0: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                when(position0 {
-
-                0 -> {
-
-                }
-
-                1 -> {
-
-                }
-                ...
-
-                else -> {
-
-                }
-            }
-
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-        }
-        */
-
-
-
-        //binding.numGrades.showContextMenu();
-
-        /*
-        binding.button.setOnClickListener{
-            if(toggle){
-                binding.button
-                binding.imageView
-            }
-            else {
-                binding.button
-                binding.imageView.isShown
-            }
-            toggle = !toggle
-        }
-        */
-
-
-
     }
 }
